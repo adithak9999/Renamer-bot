@@ -11,7 +11,7 @@ class Config(object):
    
     # database config
     DB_NAME = os.environ.get("DB_NAME","mongodb")     
-    DB_URL  = os.environ.get("DB_URL","mongodb+srv://NERO:NERO@cluster0.jvgcaoc.mongodb.net/?retryWrites=true&w=majority")
+    DB_URL  = os.environ.get("DB_URL","mongodb+srv://Zx:Zx@cluster0.9jp8ahi.mongodb.net/?retryWrites=true&w=majority")
  
     # other configs
     BOT_UPTIME  = time.time()
