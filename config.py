@@ -7,18 +7,18 @@ class Config(object):
     API_ID    = os.environ.get("API_ID", "16621564")
     API_HASH  = os.environ.get("API_HASH", "8b0bf7e5014d7a6862de76cf59e424b4")
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "6064064062:AAF3hRG1L66JFepj-PZWVrdRJA8SxCJK3Vs")
-    BOT_USERNAME = os.environ.get("BOT_USERNAME", "")
+    BOT_USERNAME = os.environ.get("BOT_USERNAME", "@MsEbolbot")
    
     # database config
-    DB_NAME = os.environ.get("DB_NAME","")     
-    DB_URL  = os.environ.get("DB_URL","")
+    DB_NAME = os.environ.get("DB_NAME","mongodb")     
+    DB_URL  = os.environ.get("DB_URL","mongodb+srv://NERO:NERO@cluster0.jvgcaoc.mongodb.net/?retryWrites=true&w=majority")
  
     # other configs
     BOT_UPTIME  = time.time()
     START_PIC   = os.environ.get("START_PIC", "")
-    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', "5090651635").split()]
+    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', "1814487265").split()]
     FORCE_SUB   = os.environ.get("FORCE_SUB", "Anime_X_Hunters") 
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1001603956230"))
     FLOOD = int(os.environ.get("FLOOD", '10'))
     BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "1234567890").split())
 
